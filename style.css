@@ -20,10 +20,10 @@ html{
 body {
  padding: 0;
  margin: 0 auto;
- max-width: 1024px;
  background-color: var(--bg-color);
  color: var(--text-color);
  font-family: font ;
+ max-width: 1024px;
 }
 
 /*Header Section */
@@ -176,6 +176,10 @@ nav > div a:hover{
 
 .home-btn-parent h3{
   margin: 0;
+}
+
+.home-img{
+  margin: auto;
 }
 
 .home-img img{
@@ -365,6 +369,7 @@ nav > div a:hover{
 .portfolio-card{
   display: flex;
   justify-content: space-between;
+  margin: auto;
 }
 
 .portfolio-card-img img{
@@ -717,3 +722,35 @@ footer ul li a:hover{
   }
 
 } 
+
+/* For Home Button Responsive Problem */
+
+@media (min-width:768px) and (max-width: 806px){
+  .home-btn-parent h3:first-child a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  .home-btn-parent h3:first-child a:hover {
+    padding: 9px 20px;
+  }
+  .home-btn-parent h3:last-child a {
+    font-size: 16px;
+    padding: 9px 20px;
+  }
+  
+  .home-btn-parent h3:last-child a:hover{
+    padding: 10px 20px;
+  }
+}
+
+/* For portfolio-card-img Responsive Problem */
+
+@media (min-width:768px) and (max-width: 874px){
+  .portfolio-card-img img{
+  height: 250px;
+  width: 100%;
+  }  
+  .portfolio-card-text{
+    max-width: 45%;
+  }
+}
